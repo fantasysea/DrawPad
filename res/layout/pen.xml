@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<LinearLayout
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal"
+		android:background="@drawable/popup"
+		android:layout_marginTop="16dip"
+		android:fadingEdgeLength="5dip"
+		android:id="@+id/scroller"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:text="选择笔的种类"
+	    	android:gravity="center_horizontal"
+		/>
+		<ImageView
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@drawable/pen01"
+		/>
+		<ImageView
+			android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@drawable/pen02"
+		/>
+	
+	</LinearLayout>
+	<ImageView
+        android:id="@+id/arrow_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_up" />
+        
+ 	<ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    	android:layout_below="@id/scroller"
+      	android:layout_marginTop="-4dip"
+        android:src="@drawable/arrow_down" />
+</RelativeLayout>

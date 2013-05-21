@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/footer_bg"
+		android:orientation="horizontal"
+	>
+			<Button
+				android:id="@+id/switching"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="切换"
+				
+			/>
+		
+			<Button
+				android:id="@+id/palette"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="调色板"
+			/>
+
+			<Button
+				android:id="@+id/pen"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="画笔"
+			/>
+
+			<Button
+				android:id="@+id/eraser"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="橡皮擦"
+			/>
+
+			<Button
+				android:id="@+id/undo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="重做"
+			/>
+			<Button
+				android:id="@+id/grid"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="网格线"
+			/>
+			<Button
+				android:id="@+id/background"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="背景"
+			/>
+			<Button
+				android:id="@+id/save"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="保存"
+			/>
+			<Button
+				android:id="@+id/help"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="帮助"
+			/>
+			<Button
+				android:id="@+id/delete"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="删除"
+			/>
+	
+	
+	</LinearLayout>
+	
+	<FrameLayout
+		android:id="@+id/paint_frame"
+		android:layout_width="fill_parent"
+		android:layout_height="0px"
+		android:layout_weight="1"	
+		android:background="#ffffff"
+	>
+		<LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+	    	
+	    	<ImageView android:id="@+id/background"
+		    	android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		    	/>
+		    
+	    </LinearLayout>
+	    
+		<com.drawpad.view.SketchPadView
+		        android:id="@+id/sketchpad"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		    />
+
+	</FrameLayout>
+</LinearLayout>
